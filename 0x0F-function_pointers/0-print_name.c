@@ -12,6 +12,8 @@ void print_name(char *name, void (*f)(char *))
 {
 	void (*newFunc)(char *) = f;
 
+	if (name == NULL || f == NULL)
+		return;
 	newFunc(name);
 }
 #endif
