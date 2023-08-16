@@ -1,4 +1,5 @@
-#ifndef
+#ifndef PRINT_NAME_H
+#define PRINT_NAME_H
 #include <stdio.h>
 
 /**
