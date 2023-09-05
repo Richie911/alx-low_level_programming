@@ -16,10 +16,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	ssize_t text;
 
 	filedir = open(filename, O_RDONLY);
-	if (fd == -1)
+	if (filedir == -1)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
-	text = read(fd, buf, letters);
+	text = read(filedir, buf, letters);
 	w = write(STDOUT_FILENO, buf, text);
 
 	free(buf);
